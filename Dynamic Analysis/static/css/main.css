@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('fonts.css');
+
+body {
+    background: linear-gradient(#30354b, #575e7a);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login_container{
+    max-width: 60vw;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.grid{
+    display: flex;
+    height: 100%;
+    background-size: cover;
+}
+
+.left{
+flex: 2;
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+.left .img-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.left img{
+    height: 80px;
+    width: auto;
+}
+
+.left .head-container{
+    display: flex;
+    justify-content: left;
+    padding: 10% 5%;
+}
+
+.head-container p{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 24px;
+    color: #dadada;
+    line-height: 0.25;
+}
+
+.head-container p strong{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 24px;
+    color: #dadada;
+    line-height: 0.25;
+}
+
+.left .text{
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #dadada;
+    font-size: 14px;
+    padding: 20px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+.left .form{
+    padding: 10% 5%;
+}
+
+.left .form .input-container{
+    margin: 10px;
+}
+
+.left .form .input-container button,
+.left .form .input-container input{
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+
+.left .form .input-container button{
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #dadada;
+    border: 2px solid #497aa7;
+}
+
+.left .form .input-container button:hover{
+    background-color: #497aa7;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .5) inset;
+}
+
+.left .form .input-container input::placeholder{
+    color: #9c9c9c;
+}
+
+.left .form .input-container input{
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    color: #dadada;
+    border-bottom: 1px solid #497aa7;
+}
+
+.input-container p{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    color: #dadada;
+    line-height: 1;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border-bottom: 10px solid #13A89E;
+    background-color: #FAF9F6;
+    font-family: proxima nova, sans-serif;
+    font-size: 10pt;
+}
+
+.right{
+    flex: 3;
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

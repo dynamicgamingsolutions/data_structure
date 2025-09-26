@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DGS Application</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/logOut.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</head>
+
+<body>
+    <div class="login_container">
+        <div class="grid">
+            <div class="left">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='img/Letterhead Style two-tone.png') }}" alt="Image description">
+                </div>
+                <div class="head-container">
+                    <p>You have logged out of <strong>Bananalytics</strong></p>
+                </div>
+                <div class="text">
+                    <p>To log back in, click the button below.</p>
+                </div>
+                <div class="return">
+                    <button id="login-reset-button" type="submit">Login Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

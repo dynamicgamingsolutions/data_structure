@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DGS Application</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</head>
+
+<body>
+    <div class="login_container">
+        <div class="grid">
+            <div class="left">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename='img/Letterhead Style two-tone.png') }}" alt="Image description">
+                </div>
+                <div class="head-container">
+                    <p>Login to <strong>Bananalytics</strong></p>
+                </div>
+                <div class="text">
+                    <p>To log in to Bananalytics, the interface for the Dynamic Gaming Solutions LLC database, enter the username and password given to you by the Bananalytics admin. If you cannot remember your username or password, contact the admin, Paul Collins. If you are needing a login, and were not provided one after onbording...no you don't.</p>
+                </div>
+                <div class="form">
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-container">
+                        <button id="login-reset-button" type="submit">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='img/background.png') }}" alt="Image description">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

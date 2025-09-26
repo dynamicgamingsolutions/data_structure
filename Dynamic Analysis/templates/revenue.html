@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DGS Application</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/revenue.css') }}">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <img src="{{ url_for('static', filename='img/Letterhead Style two-tone.png') }}" class="header_img" alt="Image description">
+            <h1 class="header_text">
+                Revenue Insert
+            </h1>
+                <img src="{{ url_for('static', filename='img/logoff.png')}}" alt="Logoff" class="logoff">
+        </header>
+        <div class="grid">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Revenue</li>
+                    <li>Proposals</li>
+                    <li>Slot Master</li>
+                    <li>Table</li>
+                    <li>Player</li>
+                    <li>Employee</li>
+                    <li>Vendor</li>
+                    <li>Game</li>
+                    <li>Location</li>
+                    <li>Report</li>
+                </ul>
+            </nav>
+            <div>
+                <div class="upload">
+                    <h1 id = "head">Revenue Insert Page</h1>
+                    <div class="text">
+                        <p>Fill out "Revenue" Microsoft Excel template with required fields.</p>
+                        <p>Once filled out, save file as <em>"Casino Name</em> Sum.xslx"</p>
+                        <p>Replace <em>Casino Name</em> with the actual name of the casino.</p>
+                        <p>Once saved, drag and drop the file in the box below.</p>
+                    </div>
+                    <div id="drop_zone">
+                        Drop files here
+                    </div>
+                    <div id="file_info">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            This is a product of Paul A. Collins. This  program was created using Python, HTML, CSS, Javascript, and SQL using the Flask Framwork. Any questions or concerns can be directed to paulc@dynamicgamingsolutions.com. If there is ever a question about Paul's contenued employment or if he should get another raise, please remember that this one page shaved off four steps from the revenue insert process, one of which could have been broken if a single file was not reset. This also removed the need to save the revenue reports in two seperate formats for uploading, and makes sure all entries are read.
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/drag_and_drop.js') }}"></script>
+</body>
+</html>
