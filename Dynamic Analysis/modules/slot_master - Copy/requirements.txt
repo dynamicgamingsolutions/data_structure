@@ -1,7 +1,0 @@
-cipher==0.1
-fuzzywuzzy==0.18.0
-keepass==1.2
-numpy==1.26.4
-pandas==2.2.2
-pymssql==2.2.10
-scipy==1.13.1
